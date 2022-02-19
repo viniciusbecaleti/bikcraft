@@ -1,6 +1,6 @@
 .botao {
    display: inline-block;
-   color: #332200;
+   color: var(--cor-p5);
    font-family: "Poppins";
    font-weight: 600;
    font-size: 18px;
