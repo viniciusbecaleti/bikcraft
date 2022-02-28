@@ -15,6 +15,8 @@
    border-radius: 4px;
    background: linear-gradient(#ffbf00, #f2a50c);
    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+   border: none;
+   cursor: pointer;
 }
 
 .botao:hover {
