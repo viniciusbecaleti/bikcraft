@@ -41,3 +41,23 @@ function eventosPerguntas(pergunta) {
 }
 
 perguntas.forEach(eventosPerguntas)
+
+// Galeria de bicicletas
+const galeriaContainer = document.querySelector(".bicicleta-imagens")
+const galeria = document.querySelectorAll(".bicicleta-imagens img")
+
+galeria.forEach(imagem => {
+   imagem.addEventListener("click", event => {
+      const clicada = event.currentTarget
+      const media = matchMedia("(min-width: 960px)").matches
+
+      if (media) {
+         galeriaContainer.prepend(clicada)
+      }
+   })
+})
+
+// Animação
+if (window.SimpleAnime) {
+   new SimpleAnime()
+}
